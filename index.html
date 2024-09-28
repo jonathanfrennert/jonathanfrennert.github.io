@@ -52,6 +52,54 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="thermalseg_stop()" onmouseover="thermalseg_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='thermalseg_image'><video  width=100% muted autoplay loop>
+                  <source src="images/thermalseg.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/thermalseg.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function thermalseg_start() {
+                    document.getElementById('thermalseg_image').style.opacity = "1";
+                  }
+        
+                  function thermalseg_stop() {
+                    document.getElementById('thermalseg_image').style.opacity = "0";
+                  }
+                  thermalseg_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2307.09027">
+                  <span class="papertitle">Online Self-Supervised Thermal Water Segmentation for Aerial Vehicles</span>
+                </a>
+                <br>
+                
+                <a href="https://www.linkedin.com/in/connorlee77">Connor Lee</a>,
+                <strong>Jonathan Gustafsson Frennert</strong>,
+                <a href="https://ganlumomo.github.io/">Lu Gan</a>,
+                <a href="https://andersonrayner.github.io/">Matthew Anderson</a>, <br>
+                <a href="https://aerospacerobotics.caltech.edu/prof-soonjo-chung">Soon-Jo Chung</a>
+                <br>
+                <em>IROS</em>, 2024 &nbsp <font color="red"><strong>(Best Paper Finalist)</strong></font>
+                <br>
+                <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
+                / 
+                <a href="https://youtu.be/3O3cbZhjtoQ">video</a>
+                / 
+                <a href="https://github.com/connorlee77/uav-thermal-water-segmentation">code</a>
+                <p></p>
+                <p>
+                RGB-to-thermal pre-training and online adaptation using texture and motion cues
+                yields robust thermal water segmentation for aerial vehicles. 
+                </p>
+              </td>
+            </tr>
+        
+
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
